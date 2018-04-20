@@ -1,0 +1,33 @@
+curl localhost:8080
+
+//POSTS valores
+curl -H "Content-Type: application/json" -X POST -d '{"contaContabil":"1111001","data":"20170130", "valor":"25000.17"}' http://localhost:8080/lancamentos-contabeis
+curl -H "Content-Type: application/json" -X POST -d '{"contaContabil":"1111001","data":"20170130", "valor":"150.74"}' http://localhost:8080/lancamentos-contabeis
+12575.46
+curl -H "Content-Type: application/json" -X POST -d '{"contaContabil":"2","data":"20170130", "valor":"20.00"}' http://localhost:8080/lancamentos-contabeis
+8390.30
+
+ACCEPT
+curl -H "Content-Type: application/json" -X POST -d '{"contaContabil":"3","data":"20170130", "valor":"25000.17"}' http://localhost:8080/lancamentos-contabeis
+curl -H "Content-Type: application/json" -X POST -d '{"contaContabil":"3","data":"20170130", "valor":"150.74"}' http://localhost:8080/lancamentos-contabeis
+curl -H "Content-Type: application/json" -X POST -d '{"contaContabil":"4","data":"20170130", "valor":"20.00"}' http://localhost:8080/lancamentos-contabeis
+
+GET
+curl localhost:8080/lancamentos-contabeis/59c5274c-9492-4f10-9ac2-a6d691c08840
+curl localhost:8080/lancamentos-contabeis/batata
+
+curl localhost:8080/lancamentos-contabeis/?contaContabil=3
+curl localhost:8080/lancamentos-contabeis/?batata=3
+curl localhost:8080/lancamentos-contabeis/?contaContabil=3x
+
+curl localhost:8080/lancamentos-contabeis/_stats/
+curl localhost:8080/lancamentos-contabeis/_stats/?contaContabil=3
+
+curl -H "Content-Type: application/json" -X POST -d '{"contaContabilx":"1","data":"20170130", "valor":"25000.17"}' http://localhost:8080/lancamentos-contabeis
+curl -H "Content-Type: application/json" -X POST -d '{"contaContabil":"xxx","data":"20170130", "valor":"25000.17"}' http://localhost:8080/lancamentos-contabeis
+curl -H "Content-Type: application/json" -X POST -d '{"contaContabil":"2","data":"20170130", "valor":"xxx"}' http://localhost:8080/lancamentos-contabeis
+curl -H "Content-Type: application/json" -X POST -d '{"contaContabil":"3","data":"20170144", "valor":"100"}' http://localhost:8080/lancamentos-contabeis
+curl -H "Content-Type: application/json" -X POST -d '{"contaContabil":"4","data":"20170130", "valor":"100.111"}' http://localhost:8080/lancamentos-contabeis
+
+
+
