@@ -1,4 +1,4 @@
-package comexport.unit;
+package comexport.controllers;
 
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import comexport.models.LancamentoContabil;

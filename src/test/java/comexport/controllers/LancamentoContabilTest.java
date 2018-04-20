@@ -1,4 +1,4 @@
-package comexport.unit;
+package comexport.controllers;
 
 import comexport.models.LancamentoContabil;
 import org.junit.Test;
