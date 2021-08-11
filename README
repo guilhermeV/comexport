@@ -2,7 +2,7 @@
 1. O projeto pode ser aberto como um maven project utilizando a IDEA IntelliJ
 2. Foi adicionado um wrapper para o maven caso seja desejado buildar diretamente pelo maven
 3. Foi adicionado um wrapper para o graddle caso seja desejado buildar diretamente pelo graddle
- 
+4. 
 
 - Considerações e decisões
 
