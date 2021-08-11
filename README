@@ -6,6 +6,7 @@
 5. pois é 
 
 
+
 - Considerações e decisões
 
 1. Como não há menção a utilização da informação "descrição" da conta contábil pelos endpoints e também não há definição sobre a necessidade da existência das contas contábies no momento do cadastro dos lançamentos contábeis, a informação da conta contábil será armazenada como um Integer
